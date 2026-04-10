@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickman Fight - Juego de Peleas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="ui-panel">
+            <div class="player-info">
+                <div class="health-bar">
+                    <div class="health-fill player-health"></div>
+                </div>
+                <span class="label">Jugador</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="ai-info">
+                <div class="health-bar">
+                    <div class="health-fill ai-health"></div>
+                </div>
+                <span class="label">IA</span>
+            </div>
+        </div>
+        <div class="controls-info">
+            <p><strong>Controles:</strong> A/D - Mover | ESPACIO - Saltar | J - Puñetazo | K - Patada</p>
+        </div>
+        <div class="game-status" id="gameStatus"></div>
+    </div>
+
+    <script src="js/physics.js"></script>
+    <script src="js/stickman.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
